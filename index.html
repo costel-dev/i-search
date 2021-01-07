@@ -37,11 +37,11 @@
           <span class="red">h</span>
           <span class="yellow exclaim">!</span>
         </div>
-        <form id="searchBar" class="searchBar">
+        <form id="searchBar" class="searchBar" role="search">
           <label for="search" class="offscreen"
             >Enter a search term or phase</label
           >
-          <input id="search" type="text" autocomplete="off" />
+          <input id="search" type="text" autocomplete="off" role="searchbox" />
           <div
             id="clear"
             class="none button clear"
@@ -65,10 +65,10 @@
       <section class="results">
         <h2 class="offscreen">Search Results</h2>
         <div class="statsBar">
-          <div id="stats-stats" aria-live="assertive"></div>
+          <div id="stats" aria-live="assertive"></div>
         </div>
         <div id="searchResults" class="searchResults">
-          <div class="resultItem">
+          <!-- <div class="resultItem">
             <div class="resultTitle">
               <a href=""></a>
             </div>
@@ -80,7 +80,7 @@
                 <p class="resultDescription"></p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
